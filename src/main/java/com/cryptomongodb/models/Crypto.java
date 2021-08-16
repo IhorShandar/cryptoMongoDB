@@ -1,5 +1,6 @@
 package com.cryptomongodb.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,6 +15,7 @@ import java.time.LocalDateTime;
 public class Crypto {
 
     @Id
+    @JsonIgnore
     String ID;
     private double lprice;
     private String curr1;
